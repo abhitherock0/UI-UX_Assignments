@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Register — Nova College Fest 2026 — Official Site</title>
+<meta name="description" content="Official information and registration for Nova College Fest 2026, January 23–25, 2026 at Auditorium & Sports Complex, Nova College." />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main">
+  <a href="index.html" class="brand" aria-label="Home">
+    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" class="brand-icon"><path d="M12 2l9 6-9 6-9-6 9-6zm0 8l9 6-9 6-9-6 9-6z"/></svg>
+    <span>NovaFest</span>
+  </a>
+  <ul>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact & FAQs</a></li>
+  </ul>
+</nav>
+
+  <div class="sub-hero">
+    <h1>Participant Registration</h1>
+    <p class="lead">Fill out the form to register for one or more events. You’ll receive a confirmation on this page.</p>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <form id="registrationForm" class="form-card" novalidate>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div class="grid-2">
+        <label>Full name
+          <input type="text" name="fullName" required />
+        </label>
+        <label>Email
+          <input type="email" name="email" required />
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" pattern="[0-9\-\+\s]{7,15}" required />
+        </label>
+        <label>College / Institution
+          <input type="text" name="college" required />
+        </label>
+        <label>Department
+          <input type="text" name="department" />
+        </label>
+        <label>Year / Semester
+          <select name="year">
+            <option value="">Select…</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+            <option>Postgrad</option>
+          </select>
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Events</legend>
+      <p class="small">Select all that apply (at least one required).</p>
+      <ul class="choices">
+        <li><label><input type="checkbox" name="events" value="NovaHack 24 — Hackathon"> NovaHack 24 — Hackathon</label></li>
+        <li><label><input type="checkbox" name="events" value="CodeSprint — Competitive Programming"> CodeSprint — Competitive Programming</label></li>
+        <li><label><input type="checkbox" name="events" value="RoboLine — Line Follower"> RoboLine — Line Follower</label></li>
+        <li><label><input type="checkbox" name="events" value="PixelCraft — UI/UX"> PixelCraft — UI/UX</label></li>
+        <li><label><input type="checkbox" name="events" value="Solo Vocals"> Solo Vocals</label></li>
+        <li><label><input type="checkbox" name="events" value="GrooveCrew — Group Dance"> GrooveCrew — Group Dance</label></li>
+        <li><label><input type="checkbox" name="events" value="Short Film Showcase"> Short Film Showcase</label></li>
+        <li><label><input type="checkbox" name="events" value="FrameIt — Photography"> FrameIt — Photography</label></li>
+        <li><label><input type="checkbox" name="events" value="5‑a‑side Football"> 5‑a‑side Football</label></li>
+        <li><label><input type="checkbox" name="events" value="Basketball 3×3"> Basketball 3×3</label></li>
+        <li><label><input type="checkbox" name="events" value="Table Tennis (Singles)"> Table Tennis (Singles)</label></li>
+        <li><label><input type="checkbox" name="events" value="Chess Blitz"> Chess Blitz</label></li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Logistics</legend>
+      <div class="grid-3">
+        <label>T‑shirt size
+          <select name="tshirt">
+            <option value="">Choose</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+        </label>
+        <label>Team name (if any)
+          <input type="text" name="team" />
+        </label>
+        <label>Payment mode
+          <select name="payment">
+            <option value="">Select</option>
+            <option>UPI</option>
+            <option>Card</option>
+            <option>Cash</option>
+          </select>
+        </label>
+      </div>
+      <label>Team members (optional)
+        <textarea name="members" rows="3" placeholder="Name, email — one per line"></textarea>
+      </label>
+      <label class="consent"><input type="checkbox" name="consent" required> I agree to the NovaFest code of conduct and event rules.</label>
+    </fieldset>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Submit registration</button>
+      <button type="reset" class="btn btn-ghost">Reset</button>
+    </div>
+
+    <p class="form-note small">Note: This is a demo template that stores submissions in your browser (no server). Replace with your backend endpoint for production.</p>
+    <div id="formAlert" role="status" aria-live="polite"></div>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h3 class="footer-heading">About NovaFest</h3>
+      <p>Nova College Fest is a student-run celebration of innovation, culture, and sport. Join us for three days of competitions, showcases, and community.</p>
+    </div>
+    <div>
+      <h3 class="footer-heading">Follow us</h3>
+      <ul class="social">
+        <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener">X (Twitter)</a></li>
+        <li><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-heading">Links</h3>
+      <ul class="links">
+        <li><a href="gallery-2024.html">Previous Year Gallery (2024)</a></li>
+        <li><a href="register.html">Participant Registration</a></li>
+        <li><a href="schedule.html">Event Schedule</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">© 2025 Nova College Students' Union</p>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>

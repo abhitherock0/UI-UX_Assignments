@@ -1,0 +1,20 @@
+body {font-family: Arial, sans-serif;margin:0;padding:0;background:#f8fafc;}
+.site-header {background:#2563eb;color:white;padding:1rem;}
+.site-nav {display:flex;justify-content:space-between;align-items:center;}
+.site-nav ul {display:flex;list-style:none;gap:1rem;padding:0;margin:0;}
+.site-nav a {color:white;text-decoration:none;}
+.hero {display:flex;align-items:center;justify-content:center;flex-wrap:wrap;padding:2rem;}
+.btn {background:#fff;color:#2563eb;padding:0.6rem 1rem;border-radius:8px;text-decoration:none;}
+.container {padding:1rem;max-width:1100px;margin:auto;}
+.card {background:#fff;border:1px solid #ddd;border-radius:12px;padding:1rem;margin:1rem 0;}
+.cards {display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;}
+.video-highlight {background:linear-gradient(90deg,#e0f2fe,#f0fdf4);padding:1rem;border-radius:16px;margin:1rem 0;}
+.video-highlight video {width:100%;border-radius:12px;border:3px solid #e2e8f0;}
+.schedule {width:100%;border-collapse:collapse;margin-top:1rem;}
+.schedule th,.schedule td {border:1px solid #ddd;padding:0.6rem;}
+.audio-guide {background:#eef2ff;padding:1rem;border-radius:12px;margin:1rem 0;}
+.gallery-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+.gallery-grid img {width:100%;border-radius:12px;transition:transform 0.3s;}
+.gallery-grid img:hover {transform:scale(1.05);}
+.site-footer {text-align:center;padding:1rem;background:#fff;margin-top:2rem;}
+@media(max-width:768px){.cards{flex-direction:column;align-items:center;}.site-nav ul{flex-direction:column;}}

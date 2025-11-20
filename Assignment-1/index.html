@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Portfolio — Abhishek Goyal</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Main website heading -->
+  <header class="site-header" id="top">
+    <h1>Abhishek</h1>
+    <p class="tagline">Student • Developer • Designer</p>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: About Me (Paragraph + Image + text formatting demo) -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <img src="./mypic.png" width="180" height="265" alt="Profile photo of Your Name" title="Hi! This is me."/>
+        <div>
+          <p>
+            Hello! I'm <strong>Abhishek Goyal</strong>, a passionate <em>web developer</em> and
+            lifelong learner. I enjoy turning ideas into accessible and
+            delightful experiences on the web.
+          </p>
+          <p>
+            This line demonstrates text formatting:
+            <b>bold</b>, <i>italic</i>, <u>underlined</u>,
+            <em>emphasis</em>, <strong>strong</strong>, and <mark>highlight</mark>.
+          </p>
+          <p>
+            Jump quickly to: 
+            <a href="#education">Education</a> •
+            <a href="#projects">Projects</a> •
+            <a href="#contact">Contact</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Education (Table with headers, rows, rowspan, colspan) -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Academic Qualifications</caption>
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+              <th>Year</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">B.E./B.Tech in Computer Engineering</td>
+              <td>Thapar Institute of Engineering and Technology</td>
+              <td>2023–2027</td>
+              <td>8.94 CGPA</td>
+            </tr>
+            <tr>
+              <td colspan="3">Relevant Coursework: Data Structures,DBMS,OS</td>
+            </tr>
+            <tr>
+              <td>Senior Secondary (XII)</td>
+              <td>Springdales Public School</td>
+              <td>2022</td>
+              <td>88%</td>
+            </tr>
+            <tr>
+              <td>Secondary (X)</td>
+              <td>La Foundation School</td>
+              <td>2020</td>
+              <td>95%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 3: Skills (Lists: unordered + ordered timeline) -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Core Skills (Unordered List)</h3>
+          <ul class="styled-bullets">
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React, Node.js</li>
+            <li>Responsive Design & Accessibility</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Learning Timeline (Ordered List)</h3>
+          <ol class="timeline">
+            <li>2023 — Started with HTML & CSS</li>
+            <li>2024 — Learned JavaScript & Git</li>
+            <li>2025 — Exploring React and backend basics</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Projects (Text + link + optional image) -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <article class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+          A responsive, accessible portfolio site built with semantic HTML & modern CSS.
+          View the source on <a href="https://github.com/abhitherock0" target="_blank" rel="noopener">GitHub</a>
+          or check my <a href="www.linkedin.com/in/abhishek-goyal-6500892b9" target="_blank" rel="noopener">LinkedIn</a>.
+        </p>
+        <img src="image.png" alt="Screenshot of portfolio website project" title="Portfolio preview" width="420" height="240"/>
+      </article>
+    </section>
+
+    <!-- Section 5: Contact (Email, social media links) -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:abhishekgoyal0107@gmail.com">abhishekgoyal0107@gmail.com</a></p>
+      <p>LinkedIn: <a href="www.linkedin.com/in/abhishek-goyal-6500892b9" target="_blank" rel="">www.linkedin.com/in/abhishek-goyal-6500892b9</a></p>
+      <p>GitHub: <a href="https://github.com/abhitherock0" target="_blank" rel="noopener">github.com/yourusername</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made by Abhishek Goyal</p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+</body>
+</html>
